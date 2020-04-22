@@ -6,12 +6,12 @@
     <title>Concatenação</title>
 </head>
 <body>
-    <h3>Programa de Boas Vindas com concatenação de campos!</h3>
+    <h3>Programa de concatenação de campos!</h3>
 
     <form name="FormConcatena" action="" method="post">
         Digite o nome : <input type="text" name="f_nome" /><br />
         Digite o sobrenome : <input type="text" name="f_sobrenome" /><br />
-        <input type="reset" name="btn_concatena" value="Concatenar" onclick = "concatena()" />
+        <input type="button" name="btn_concatena" value="Concatenar" onclick = "concatena()" />
         <input type="reset" name="btn_cancela" value="Cancelar" />
     </form>
 
@@ -21,12 +21,13 @@
         var js_nomecompleto;
 
         function concatena(){
-            js_nome = documet.FormConcatena.f_nome.value;
+            js_nome = document.FormConcatena.f_nome.value;
             js_sobrenome = document.FormConcatena.f_sobrenome.value;
 
-            js_nomecompleto = js_nome + ' ' + js_sobrenome;
+            js_nomecompleto = `${js_nome} ${js_sobrenome}`;
 
-            window.alert('Olá' + js_nomecompleto);
+            //window.alert('Olá' + js_nomecompleto);
+            alert(`Olá ${js_nomecompleto}!`)
         }
     </script>
 </body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+<body>
+    <h3>Soma de dois números inteiros</h3>
+
+    <form name="FormSoma" action="" method="post">
+        Digite o primeiro número: <input type="text" name="n1"><p></p>
+        Digite o segundo número: <input type="text" name="n2"><p></p>
+        <input type="button" name="btn_soma" value="Somar" onclick="soma()" />
+        <input type="reset" name="btn_apagar" value="Apagar" />
+    </form>
+    <script language = "JavaScript">
+        var numero1;
+        var numero2;
+        var soma;
+
+        function soma(){
+            //Objeto.NomeDoFormulário.NomeDaCaixaDeEntrada.Valor
+            numero1 = parseInt(document.FormSoma.n1.value);
+            numero2 = parseInt(document.FormSoma.n2.value);
+
+            soma = numero1 + numero2;
+
+            alert(`Sua soma é: ${numero1} + ${numero2} = ${soma}`);
+        }
+    </script>
+</body>
+</html>
