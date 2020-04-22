@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Case Sensitive</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome em maiúsculo ou minúsculo: ');
+        var up_nome = nome.toUpperCase();
+        var lo_nome = nome.toLowerCase();
+
+        if(nome == up_nome)
+            document.write(`Seu nome foi escrito em maiúsculo: <b>${nome}</b>`);
+        else if(nome == lo_nome)
+            document.write(`Seu nome foi escrito em minúsculo: <b>${nome}</b>`);
+        else
+            document.write(`Seu nome está fora dos conformes: <b>${nome}</b>`);
+    </script>
+</body>
+</html>
