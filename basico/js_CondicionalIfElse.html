@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <h3>Maior número ou igual</h3>
+    <script>
+        var numero1;
+        var numero2;
+        var maior;
+
+        numero1 = parseInt(window.prompt('Digite o primeiro número: ', 'Digite aqui'));
+        numero2 = parseInt(window.prompt('Digite o segundo número: ', 'Digite aqui'));
+
+        if(numero1 > numero2){
+            document.write(`O número ${numero1} é maior que o número ${numero2}`);
+        }
+        else if(numero1 < numero2){
+            document.write(`O número ${numero2} é maior que o número ${numero1}`);
+        }
+        else{
+            document.write(`O número ${numero2} é igual ao número ${numero1}`);
+        }
+    </script>
+</body>
+</html>
